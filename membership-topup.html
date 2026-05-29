@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 会员充值</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="profile">
+    <div class="demo-shell">
+      <div class="phone">
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">Top Up</p>
+              <h1>会员充值</h1>
+            </div>
+          </header>
+
+          <section class="card dark">
+            <p class="meta-label" style="color: rgba(255,255,255,0.72)">会员钱包</p>
+            <h3 class="card-title" data-wallet-balance>当前余额 ¥286</h3>
+            <p data-wallet-copy>本月已节省台费 ¥136，储值余额可用于订台、助教和官方活动。</p>
+          </section>
+
+          <section class="section">
+            <div class="section-head">
+              <h2 class="section-title">充值档位</h2>
+            </div>
+            <div class="topup-grid" data-topup-group>
+              <button
+                class="topup-card active"
+                data-topup-option
+                data-amount="300"
+                data-bonus="30"
+                data-arrival="330"
+                data-badge="新手最常选"
+              >
+                <span class="topup-amount">充 ¥300</span>
+                <strong>到账 ¥330</strong>
+                <span class="topup-note">送 ¥30</span>
+              </button>
+              <button
+                class="topup-card"
+                data-topup-option
+                data-amount="500"
+                data-bonus="80"
+                data-arrival="580"
+                data-badge="推荐"
+              >
+                <span class="topup-amount">充 ¥500</span>
+                <strong>到账 ¥580</strong>
+                <span class="topup-note">送 ¥80</span>
+              </button>
+              <button
+                class="topup-card"
+                data-topup-option
+                data-amount="800"
+                data-bonus="160"
+                data-arrival="960"
+                data-badge="高频会员"
+              >
+                <span class="topup-amount">充 ¥800</span>
+                <strong>到账 ¥960</strong>
+                <span class="topup-note">送 ¥160</span>
+              </button>
+              <button
+                class="topup-card"
+                data-topup-option
+                data-amount="1200"
+                data-bonus="300"
+                data-arrival="1500"
+                data-badge="年度储值"
+              >
+                <span class="topup-amount">充 ¥1200</span>
+                <strong>到账 ¥1500</strong>
+                <span class="topup-note">送 ¥300</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="summary-grid">
+              <div class="summary-card">
+                <p class="meta-label">本次支付</p>
+                <h3 data-topup-amount>¥300</h3>
+                <p data-topup-badge>新手最常选</p>
+              </div>
+              <div class="summary-card">
+                <p class="meta-label">实际到账</p>
+                <h3 data-topup-arrival>¥330</h3>
+                <p data-topup-bonus>含赠送 ¥30</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="list-card">
+              <div class="info-row">
+                <div>
+                  <p class="meta-label">到账权益</p>
+                  <h3>充值后立刻可用</h3>
+                </div>
+                <span class="pill green">实时到账</span>
+              </div>
+              <div class="benefit-list">
+                <div class="benefit-item">
+                  <strong>订台直扣</strong>
+                  <span>订台时优先使用余额，减少每次单独支付。</span>
+                </div>
+                <div class="benefit-item">
+                  <strong>助教 / 活动通用</strong>
+                  <span>陪练、教学和活动报名都能直接抵扣。</span>
+                </div>
+                <div class="benefit-item">
+                  <strong>充值赠送不拆单</strong>
+                  <span>赠送金额与本金一起进入钱包，当场可消费。</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="mini-tabs" data-chip-group>
+              <button class="seg-btn active">微信支付</button>
+              <button class="seg-btn">余额自动续充</button>
+            </div>
+          </section>
+
+          <section class="section section-stack">
+            <button class="primary-btn" data-topup-submit>确认充值</button>
+            <a class="secondary-btn" href="profile.html">稍后再说</a>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

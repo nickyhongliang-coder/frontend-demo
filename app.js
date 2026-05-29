@@ -106,6 +106,46 @@ document.querySelectorAll("[data-toast]").forEach((button) => {
   button.addEventListener("click", () => showToast(button.dataset.toast));
 });
 
+const topupGroup = document.querySelector("[data-topup-group]");
+const walletBalance = document.querySelector("[data-wallet-balance]");
+const walletCopy = document.querySelector("[data-wallet-copy]");
+const topupAmount = document.querySelector("[data-topup-amount]");
+const topupArrival = document.querySelector("[data-topup-arrival]");
+const topupBonus = document.querySelector("[data-topup-bonus]");
+const topupBadge = document.querySelector("[data-topup-badge]");
+const topupSubmit = document.querySelector("[data-topup-submit]");
+
+function applyTopupOption(option) {
+  if (!option) return;
+  const amount = option.dataset.amount;
+  const arrival = option.dataset.arrival;
+  const bonus = option.dataset.bonus;
+  const badge = option.dataset.badge;
+
+  topupGroup?.querySelectorAll("[data-topup-option]").forEach((item) => item.classList.remove("active"));
+  option.classList.add("active");
+
+  if (topupAmount) topupAmount.textContent = `¥${amount}`;
+  if (topupArrival) topupArrival.textContent = `¥${arrival}`;
+  if (topupBonus) topupBonus.textContent = `含赠送 ¥${bonus}`;
+  if (topupBadge) topupBadge.textContent = badge;
+  if (walletBalance) walletBalance.textContent = `当前余额 ¥286，充值后 ¥${286 + Number(arrival)}`;
+  if (walletCopy) walletCopy.textContent = `本次支付 ¥${amount}，赠送 ¥${bonus}，到账后可立即用于订台、助教和活动报名。`;
+  if (topupSubmit) topupSubmit.dataset.toast = `充值成功，已到账 ¥${arrival}`;
+}
+
+topupGroup?.querySelectorAll("[data-topup-option]").forEach((option) => {
+  option.addEventListener("click", () => applyTopupOption(option));
+});
+
+if (topupGroup) {
+  applyTopupOption(topupGroup.querySelector(".active") || topupGroup.querySelector("[data-topup-option]"));
+}
+
+topupSubmit?.addEventListener("click", () => {
+  showToast(topupSubmit.dataset.toast || "充值成功");
+});
+
 document.querySelectorAll("[data-back]").forEach((button) => {
   button.addEventListener("click", () => {
     if (window.history.length > 1) window.history.back();
