@@ -630,6 +630,7 @@ select {
   font-size: 11px;
   line-height: 1.1;
   color: #7b7369;
+  min-width: 0;
 }
 
 .tab .ui-icon {
@@ -685,5 +686,30 @@ select {
 
   .phone::before {
     top: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding-bottom: 150px;
+  }
+
+  .tabbar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 8px;
+    padding: 12px;
+  }
+
+  .tab {
+    min-height: 50px;
+    padding: 8px 2px;
+    border-radius: 18px;
+    font-size: 10px;
+  }
+
+  .tab .ui-icon {
+    width: 16px;
+    height: 16px;
+    flex-basis: 16px;
   }
 }
