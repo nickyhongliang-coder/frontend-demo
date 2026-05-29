@@ -556,6 +556,10 @@ select {
   background: #fbf8f1;
 }
 
+.benefit-item.highlight {
+  background: linear-gradient(135deg, rgba(214, 177, 115, 0.18), rgba(255, 248, 236, 0.95));
+}
+
 .benefit-item span {
   color: var(--muted);
   line-height: 1.55;
@@ -633,6 +637,17 @@ select {
 
 .topup-note {
   color: #88693a;
+}
+
+.topup-discount {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(46, 102, 85, 0.1);
+  color: var(--green-700);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .tabbar {

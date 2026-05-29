@@ -113,6 +113,10 @@ const topupAmount = document.querySelector("[data-topup-amount]");
 const topupArrival = document.querySelector("[data-topup-arrival]");
 const topupBonus = document.querySelector("[data-topup-bonus]");
 const topupBadge = document.querySelector("[data-topup-badge]");
+const topupDiscount = document.querySelector("[data-topup-discount]");
+const topupDiscountCopy = document.querySelector("[data-topup-discount-copy]");
+const benefitTitle = document.querySelector("[data-benefit-title]");
+const benefitCopy = document.querySelector("[data-benefit-copy]");
 const topupSubmit = document.querySelector("[data-topup-submit]");
 
 function applyTopupOption(option) {
@@ -121,6 +125,8 @@ function applyTopupOption(option) {
   const arrival = option.dataset.arrival;
   const bonus = option.dataset.bonus;
   const badge = option.dataset.badge;
+  const discount = option.dataset.discount;
+  const discountCopy = option.dataset.discountCopy;
 
   topupGroup?.querySelectorAll("[data-topup-option]").forEach((item) => item.classList.remove("active"));
   option.classList.add("active");
@@ -129,9 +135,13 @@ function applyTopupOption(option) {
   if (topupArrival) topupArrival.textContent = `¥${arrival}`;
   if (topupBonus) topupBonus.textContent = `含赠送 ¥${bonus}`;
   if (topupBadge) topupBadge.textContent = badge;
+  if (topupDiscount) topupDiscount.textContent = discount;
+  if (topupDiscountCopy) topupDiscountCopy.textContent = discountCopy;
+  if (benefitTitle) benefitTitle.textContent = `当前解锁：${discount}会员价`;
+  if (benefitCopy) benefitCopy.textContent = `${discountCopy}，充值后当场生效。`;
   if (walletBalance) walletBalance.textContent = `当前余额 ¥286，充值后 ¥${286 + Number(arrival)}`;
-  if (walletCopy) walletCopy.textContent = `本次支付 ¥${amount}，赠送 ¥${bonus}，到账后可立即用于订台、助教和活动报名。`;
-  if (topupSubmit) topupSubmit.dataset.toast = `充值成功，已到账 ¥${arrival}`;
+  if (walletCopy) walletCopy.textContent = `本次支付 ¥${amount}，赠送 ¥${bonus}，并解锁${discount}会员权益。`;
+  if (topupSubmit) topupSubmit.dataset.toast = `充值成功，已到账 ¥${arrival}，已解锁${discount}`;
 }
 
 topupGroup?.querySelectorAll("[data-topup-option]").forEach((option) => {
