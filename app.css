@@ -353,6 +353,10 @@ select {
   gap: 12px;
 }
 
+.is-hidden {
+  display: none !important;
+}
+
 .info-row {
   display: flex;
   justify-content: space-between;

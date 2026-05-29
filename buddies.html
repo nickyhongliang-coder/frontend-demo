@@ -27,13 +27,13 @@
           </section>
 
           <section class="section">
-            <div class="chip-row" data-chip-group>
-              <button class="chip active">全部</button>
-              <button class="chip">台球搭子</button>
-              <button class="chip">柠檬茶电竞</button>
-              <button class="chip">咖啡店开黑</button>
-              <button class="chip">今晚</button>
-              <button class="chip">女生优先</button>
+            <div class="chip-row" data-buddy-filters>
+              <button class="chip active" data-scene-filter="all">全部</button>
+              <button class="chip" data-scene-filter="billiards">台球搭子</button>
+              <button class="chip" data-scene-filter="lemontea">柠檬茶电竞</button>
+              <button class="chip" data-scene-filter="coffee">咖啡店开黑</button>
+              <button class="chip" data-extra-filter="tonight">今晚</button>
+              <button class="chip" data-extra-filter="female">女生优先</button>
             </div>
           </section>
 
@@ -47,7 +47,7 @@
 
           <section class="section">
             <div class="list-stack">
-              <div class="list-card">
+              <div class="list-card" data-buddy-card data-scene="billiards" data-filters="tonight,female">
                 <div class="info-row">
                   <div>
                     <p class="meta-label">20:00 · 星轨台球俱乐部</p>
@@ -64,7 +64,7 @@
                 <button class="primary-btn" data-toast="已发送加入申请，等待对方确认">申请加入</button>
               </div>
 
-              <div class="list-card">
+              <div class="list-card" data-buddy-card data-scene="lemontea" data-filters="tonight,female">
                 <div class="info-row">
                   <div>
                     <p class="meta-label">19:30 · 柠檬茶店电竞角</p>
@@ -81,7 +81,7 @@
                 <button class="primary-btn" data-toast="已发送柠檬茶开黑申请">申请加入</button>
               </div>
 
-              <div class="list-card">
+              <div class="list-card" data-buddy-card data-scene="coffee" data-filters="tonight">
                 <div class="info-row">
                   <div>
                     <p class="meta-label">20:15 · 咖啡店静音区</p>
@@ -98,7 +98,7 @@
                 <button class="primary-btn" data-toast="已发送咖啡店开黑申请">申请加入</button>
               </div>
 
-              <div class="list-card">
+              <div class="list-card" data-buddy-card data-scene="billiards" data-filters="tonight">
                 <div class="info-row">
                   <div>
                     <p class="meta-label">21:30 · 黑曜会馆</p>

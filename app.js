@@ -83,7 +83,7 @@ document.querySelectorAll(".tab").forEach((tab) => {
   if (tab.dataset.tab === page) tab.classList.add("active");
 });
 
-document.querySelectorAll("[data-chip-group]").forEach((group) => {
+document.querySelectorAll("[data-chip-group]:not([data-buddy-filters])").forEach((group) => {
   group.querySelectorAll(".chip, .slot, .seg-btn").forEach((button) => {
     button.addEventListener("click", () => {
       group.querySelectorAll(".chip, .slot, .seg-btn").forEach((item) => item.classList.remove("active"));
@@ -155,6 +155,52 @@ if (topupGroup) {
 topupSubmit?.addEventListener("click", () => {
   showToast(topupSubmit.dataset.toast || "充值成功");
 });
+
+const buddyFilterGroup = document.querySelector("[data-buddy-filters]");
+
+if (buddyFilterGroup) {
+  const sceneButtons = buddyFilterGroup.querySelectorAll("[data-scene-filter]");
+  const extraButtons = buddyFilterGroup.querySelectorAll("[data-extra-filter]");
+  const buddyCards = document.querySelectorAll("[data-buddy-card]");
+  let activeScene = "all";
+  const activeExtras = new Set();
+
+  function applyBuddyFilters() {
+    buddyCards.forEach((card) => {
+      const scene = card.dataset.scene;
+      const filters = new Set((card.dataset.filters || "").split(",").filter(Boolean));
+      const sceneMatch = activeScene === "all" || scene === activeScene;
+      const extrasMatch = [...activeExtras].every((filter) => filters.has(filter));
+      card.classList.toggle("is-hidden", !(sceneMatch && extrasMatch));
+    });
+  }
+
+  sceneButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeScene = button.dataset.sceneFilter || "all";
+      sceneButtons.forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+      applyBuddyFilters();
+    });
+  });
+
+  extraButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filterKey = button.dataset.extraFilter;
+      if (!filterKey) return;
+      if (activeExtras.has(filterKey)) {
+        activeExtras.delete(filterKey);
+        button.classList.remove("active");
+      } else {
+        activeExtras.add(filterKey);
+        button.classList.add("active");
+      }
+      applyBuddyFilters();
+    });
+  });
+
+  applyBuddyFilters();
+}
 
 document.querySelectorAll("[data-back]").forEach((button) => {
   button.addEventListener("click", () => {
