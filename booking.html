@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 订台</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="venues">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">Booking</p>
+              <h1>确认订台</h1>
+            </div>
+          </header>
+
+          <section class="card dark">
+            <p class="meta-label" style="color: rgba(255,255,255,0.72)">预约门店</p>
+            <h3 class="card-title">星轨台球俱乐部</h3>
+            <p>静安区 · 标准台 · 今晚 20:00 · 2 小时</p>
+          </section>
+
+          <section class="section">
+            <div class="section-head">
+              <h2 class="section-title">玩法选择</h2>
+            </div>
+            <div class="mini-tabs" data-chip-group>
+              <button class="seg-btn active">自己打</button>
+              <button class="seg-btn">找搭子拼局</button>
+              <button class="seg-btn">约助教陪练</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="summary-grid">
+              <div class="summary-card">
+                <p class="meta-label">台费</p>
+                <h3>¥136</h3>
+                <p>标准台 2 小时，VIP 可减免 2 小时。</p>
+              </div>
+              <div class="summary-card">
+                <p class="meta-label">优惠券</p>
+                <h3>已抵扣 ¥68</h3>
+                <p>本次实际支付仅剩酒水或附加服务。</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-head">
+              <h2 class="section-title">附加服务</h2>
+            </div>
+            <div class="list-stack">
+              <div class="list-card">
+                <div class="info-row">
+                  <div>
+                    <h3>新人陪打助教</h3>
+                    <p>1 小时，帮助热场，适合第一次来店。</p>
+                  </div>
+                  <span class="pill gold">¥99</span>
+                </div>
+                <button class="secondary-btn" data-toast="已加入助教候选，下单后可继续选择">先加到订单</button>
+              </div>
+              <div class="list-card">
+                <div class="info-row">
+                  <div>
+                    <h3>轻酒水套餐</h3>
+                    <p>2 杯饮品 + 小食，适合双人见面局。</p>
+                  </div>
+                  <span class="pill blue">¥58</span>
+                </div>
+                <button class="secondary-btn" data-toast="酒水套餐已加入订单">加入套餐</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="section section-stack">
+            <a class="primary-btn" href="buddies.html">订台并去找搭子</a>
+            <a class="secondary-btn" href="coach-booking.html">直接约助教</a>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

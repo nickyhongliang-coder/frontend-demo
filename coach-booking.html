@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 预约助教</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="coaches">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">Coach Booking</p>
+              <h1>预约助教</h1>
+            </div>
+          </header>
+
+          <section class="card dark">
+            <p class="meta-label" style="color: rgba(255,255,255,0.72)">服务对象</p>
+            <h3 class="card-title">林夏 · 新手友好型陪练</h3>
+            <p>星轨台球俱乐部 · 今晚可约</p>
+          </section>
+
+          <section class="section">
+            <div class="mini-tabs" data-chip-group>
+              <button class="seg-btn active">陪打热场</button>
+              <button class="seg-btn">基础教学</button>
+              <button class="seg-btn">双人练习</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="times" data-chip-group>
+              <button class="slot active">1 小时</button>
+              <button class="slot">2 小时</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="times" data-chip-group>
+              <button class="slot active">19:00</button>
+              <button class="slot">20:00</button>
+              <button class="slot">21:00</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="summary-grid">
+              <div class="summary-card">
+                <p class="meta-label">服务费</p>
+                <h3>¥99</h3>
+                <p>陪打热场 1 小时</p>
+              </div>
+              <div class="summary-card">
+                <p class="meta-label">场地建议</p>
+                <h3>标准台</h3>
+                <p>建议同时预留包间或标准台</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section section-stack">
+            <button class="primary-btn" data-toast="预约成功，已同步到我的订单">确认预约</button>
+            <a class="secondary-btn" href="booking.html">先去订台</a>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

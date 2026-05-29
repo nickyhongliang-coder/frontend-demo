@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 场馆</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="venues">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head">
+            <div class="page-title-wrap">
+              <p class="eyebrow">Venue</p>
+              <h1>附近场馆</h1>
+            </div>
+          </header>
+
+          <section class="section">
+            <div class="chip-row" data-chip-group>
+              <button class="chip active">全部</button>
+              <button class="chip">台球</button>
+              <button class="chip">飞镖</button>
+              <button class="chip">包间</button>
+              <button class="chip">2km 内</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="list-stack">
+              <a class="list-card" href="venue-detail.html">
+                <div class="cover has-image">
+                  <img src="../assets/lounge.jpeg" alt="星轨台球俱乐部环境图" />
+                  <div class="cover-inner">
+                    <div class="overlay-card">
+                      <strong>星轨台球俱乐部</strong>
+                      <p>美式桌 12 张 · 包间 3 间 · 飞镖区</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span>静安区 · 1.3km · 4.8 分</span>
+                  <span class="pill green">可订台</span>
+                </div>
+                <p>适合第一次来店，空间大、人群年轻，活动组织频率高。</p>
+              </a>
+
+              <a class="list-card" href="venue-detail.html">
+                <div class="cover alt has-image">
+                  <img src="../assets/lamp.jpeg" alt="黑曜会馆环境图" />
+                  <div class="cover-inner">
+                    <div class="overlay-card">
+                      <strong>黑曜会馆</strong>
+                      <p>中式桌 8 张 · 私密酒水区 · 夜场氛围</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span>长宁区 · 2.1km · 4.7 分</span>
+                  <span class="pill gold">助教较多</span>
+                </div>
+                <p>更适合进阶玩家约助教练球，夜晚客流多。</p>
+              </a>
+
+              <a class="list-card" href="venue-detail.html">
+                <div class="cover soft has-image">
+                  <img src="../assets/team.jpeg" alt="白露轻运动空间活动图" />
+                  <div class="cover-inner">
+                    <div class="overlay-card">
+                      <strong>白露轻运动空间</strong>
+                      <p>台球 + 射箭 + 活动房 · 女性用户较多</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span>徐汇区 · 3.4km · 4.9 分</span>
+                  <span class="pill blue">活动热门</span>
+                </div>
+                <p>平台主题活动常驻门店，适合参加官方局。</p>
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 申请助教</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="profile">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">Become Coach</p>
+              <h1>申请助教身份</h1>
+            </div>
+          </header>
+
+          <section class="card dark">
+            <p class="meta-label" style="color: rgba(255,255,255,0.72)">流程</p>
+            <h3 class="card-title">提交资料 → 审核 → 开启接单</h3>
+            <p>通过审核后，你的个人页会展示在助教广场，其他会员可以按时间和服务类型预约你。</p>
+          </section>
+
+          <section class="section">
+            <div class="form-grid">
+              <div class="field">
+                <label>擅长项目</label>
+                <select>
+                  <option>台球</option>
+                  <option>飞镖</option>
+                  <option>射箭</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>当前水平</label>
+                <select>
+                  <option>基础陪练</option>
+                  <option>进阶教学</option>
+                  <option>比赛热身</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>服务价格</label>
+                <input type="text" value="99 元 / 小时" />
+              </div>
+              <div class="field">
+                <label>可接单时段</label>
+                <input type="text" value="工作日晚 19:00-22:00 / 周末全天" />
+              </div>
+              <div class="field">
+                <label>个人介绍</label>
+                <textarea>我擅长带新手热场、基础规则讲解和动作纠正，希望用轻松不尴尬的方式陪会员快速进入状态。</textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="summary-card">
+              <p class="meta-label">审核标准</p>
+              <h3>会员身份正常 · 球技可验证 · 服务时间稳定</h3>
+              <p>平台更看重服务稳定性、沟通能力和门店体验，而不是只看竞技水平。</p>
+            </div>
+          </section>
+
+          <section class="section section-stack">
+            <button class="primary-btn" data-toast="申请已提交，预计 1-2 个工作日审核">提交申请</button>
+            <a class="secondary-btn" href="profile.html">返回我的</a>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

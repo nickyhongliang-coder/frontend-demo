@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 搭子</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="buddies">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head">
+            <div class="page-title-wrap">
+              <p class="eyebrow">Buddy</p>
+              <h1>搭子广场</h1>
+            </div>
+          </header>
+
+          <section class="card dark">
+            <p class="meta-label" style="color: rgba(255,255,255,0.72)">AI 推荐</p>
+            <h3 class="card-title">不知道找谁一起玩？</h3>
+            <p>告诉系统你的时间、水平和偏好，它会直接给你推荐更合适的人和局。</p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="ai-match.html">开始匹配</a>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="chip-row" data-chip-group>
+              <button class="chip active">全部</button>
+              <button class="chip">新手局</button>
+              <button class="chip">进阶局</button>
+              <button class="chip">今晚</button>
+              <button class="chip">女生优先</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="list-stack">
+              <div class="list-card">
+                <div class="info-row">
+                  <div>
+                    <p class="meta-label">20:00 · 星轨台球俱乐部</p>
+                    <h3>认真练球局，还缺 1 人</h3>
+                  </div>
+                  <span class="pill green">Lv.4+</span>
+                </div>
+                <p>发起人：阿泽，偏进攻打法，想找一个节奏稳定的搭子练 2 小时。</p>
+                <div class="badge-row">
+                  <span class="pill">已订台</span>
+                  <span class="pill">可 AA 酒水</span>
+                  <span class="pill">支持女生加入</span>
+                </div>
+                <button class="primary-btn" data-toast="已发送加入申请，等待对方确认">申请加入</button>
+              </div>
+
+              <div class="list-card">
+                <div class="info-row">
+                  <div>
+                    <p class="meta-label">21:30 · 黑曜会馆</p>
+                    <h3>轻松社交局，适合第一次见面</h3>
+                  </div>
+                  <span class="pill gold">新手友好</span>
+                </div>
+                <p>发起人：Miya，想找 2 位一起玩台球，后续可能一起去酒吧区坐坐。</p>
+                <div class="badge-row">
+                  <span class="pill">已满 2/4</span>
+                  <span class="pill">可转活动局</span>
+                </div>
+                <button class="primary-btn" data-toast="申请已发出，可在我的约局里查看状态">申请加入</button>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

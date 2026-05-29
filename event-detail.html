@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 活动详情</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="events">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">Event Detail</p>
+              <h1>周五台球破冰夜</h1>
+            </div>
+          </header>
+
+          <section class="cover has-image">
+            <img src="../assets/team.jpeg" alt="周五台球破冰夜现场图" />
+            <div class="cover-inner">
+              <div class="overlay-card">
+                <strong>星轨台球俱乐部 · 今晚 19:30</strong>
+                <p>剩余 8 个名额 · 适合新会员快速入场</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="image-grid">
+              <div class="image-tile"><img src="../assets/team.jpeg" alt="活动互动氛围" /></div>
+              <div class="image-tile"><img src="../assets/lounge.jpeg" alt="门店社交场景" /></div>
+              <div class="image-tile"><img src="../assets/lamp.jpeg" alt="活动夜场氛围" /></div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="summary-grid">
+              <div class="summary-card">
+                <p class="meta-label">活动价</p>
+                <h3>¥128 / 人</h3>
+                <p>含基础饮品，不含台费加时。</p>
+              </div>
+              <div class="summary-card">
+                <p class="meta-label">适合人群</p>
+                <h3>新手 / 独自来店</h3>
+                <p>平台会安排主持和组队。</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="card">
+              <p class="meta-label">活动流程</p>
+              <h3 class="card-title">破冰介绍 → 分组热身 → 自由约局</h3>
+              <p>平台负责开场与分组，后续可以自然转成单独约局或加助教服务。</p>
+            </div>
+          </section>
+
+          <section class="section section-stack">
+            <button class="primary-btn" data-toast="报名成功，活动已加入我的行程">立即报名</button>
+            <a class="secondary-btn" href="coaches.html">想先约助教再来</a>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

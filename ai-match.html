@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - AI 搭子匹配</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="buddies">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">AI Match</p>
+              <h1>AI 帮你找更合适的人</h1>
+            </div>
+          </header>
+
+          <section class="card">
+            <div class="section-head" style="margin-bottom: 8px">
+              <h2 class="section-title">你的偏好</h2>
+            </div>
+            <div class="chip-row" data-chip-group>
+              <button class="chip active">认真练球</button>
+              <button class="chip">轻松交友</button>
+              <button class="chip">想参加活动</button>
+            </div>
+            <div class="chip-row" data-chip-group style="margin-top: 10px">
+              <button class="chip active">台球</button>
+              <button class="chip">飞镖</button>
+              <button class="chip">射箭</button>
+            </div>
+            <div class="chip-row" data-chip-group style="margin-top: 10px">
+              <button class="chip active">今晚 20:00</button>
+              <button class="chip">周末下午</button>
+              <button class="chip">预算 200 内</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="list-stack">
+              <div class="list-card">
+                <div class="info-row">
+                  <div>
+                    <p class="meta-label">匹配度 92%</p>
+                    <h3>Luna · 白金会员</h3>
+                  </div>
+                  <span class="pill gold">Lv.5</span>
+                </div>
+                <p>风格稳，响应快，近 30 天参加 4 次门店活动，适合认真练球后小范围社交。</p>
+                <div class="badge-row">
+                  <span class="pill">台球进阶</span>
+                  <span class="pill">预算 200-399</span>
+                  <span class="pill">周五晚活跃</span>
+                </div>
+                <div class="dual-actions">
+                  <button class="secondary-btn" data-toast="已换一位新的推荐人选">换一个</button>
+                  <button class="primary-btn" data-toast="邀约已发出，系统已保留同场馆时段">发起邀约</button>
+                </div>
+              </div>
+
+              <div class="summary-card">
+                <p class="meta-label">延伸建议</p>
+                <h3>可直接转化为门店双人局</h3>
+                <p>系统会自动带出合适门店、空台时段和可拼活动，不用重新操作。</p>
+                <div class="hero-actions">
+                  <a class="secondary-btn" href="booking.html">去订同场馆时段</a>
+                  <a class="primary-btn" href="event-detail.html">拉去活动局</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

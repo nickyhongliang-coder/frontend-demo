@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>乐动平台 - 场馆详情</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body data-page="venues">
+    <div class="demo-shell">
+      <div class="phone">
+        <div class="statusbar">
+          <span>09:41</span>
+          <span>上海</span>
+          <span>5G</span>
+        </div>
+        <main class="page">
+          <header class="page-head with-back">
+            <button class="icon-btn" data-icon-button="back" aria-label="返回" data-back>返</button>
+            <div class="page-title-wrap">
+              <p class="eyebrow">Venue Detail</p>
+              <h1>星轨台球俱乐部</h1>
+            </div>
+          </header>
+
+          <section class="cover has-image">
+            <img src="../assets/lounge.jpeg" alt="星轨台球俱乐部门店环境图" />
+            <div class="cover-inner">
+              <div class="overlay-card">
+                <strong>静安区愚园路 188 号</strong>
+                <p>营业至 02:00 · 4.8 分 · 步行 8 分钟</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="image-grid">
+              <div class="image-tile"><img src="../assets/lounge.jpeg" alt="门店休闲区" /></div>
+              <div class="image-tile"><img src="../assets/lamp.jpeg" alt="门店氛围灯光" /></div>
+              <div class="image-tile"><img src="../assets/team.jpeg" alt="门店活动场景" /></div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="chip-row">
+              <span class="pill">美式桌 12 张</span>
+              <span class="pill">飞镖区</span>
+              <span class="pill">包间 3 间</span>
+              <span class="pill">酒水吧台</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="price-grid">
+              <div class="price-card">
+                <p class="meta-label">标准台</p>
+                <h3>¥68 / 小时</h3>
+                <p>会员可抵扣 2 小时台费。</p>
+              </div>
+              <div class="price-card">
+                <p class="meta-label">双人包间</p>
+                <h3>¥128 / 小时</h3>
+                <p>适合约助教或新手首次见面。</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-head">
+              <h2 class="section-title">今晚可选时段</h2>
+            </div>
+            <div class="times" data-chip-group>
+              <button class="slot active">18:00</button>
+              <button class="slot">19:00</button>
+              <button class="slot">20:00</button>
+              <button class="slot">21:30</button>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="summary-grid">
+              <a class="summary-card" href="coaches.html">
+                <p class="meta-label">门店助教</p>
+                <h3>当前在线 5 位</h3>
+                <p>按水平、风格和价格快速挑选。</p>
+              </a>
+              <a class="summary-card" href="event-detail.html">
+                <p class="meta-label">门店活动</p>
+                <h3>今晚有破冰局</h3>
+                <p>适合一个人来店也能快速入场。</p>
+              </a>
+            </div>
+          </section>
+
+          <section class="section">
+            <a class="primary-btn" href="booking.html" style="display: block; text-align: center">立即订台</a>
+          </section>
+        </main>
+
+        <nav class="tabbar">
+          <a class="tab" data-tab="home" href="index.html">首页</a>
+          <a class="tab" data-tab="venues" href="venues.html">场馆</a>
+          <a class="tab" data-tab="buddies" href="buddies.html">搭子</a>
+          <a class="tab" data-tab="coaches" href="coaches.html">助教</a>
+          <a class="tab" data-tab="events" href="events.html">活动</a>
+          <a class="tab" data-tab="profile" href="profile.html">我的</a>
+        </nav>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
